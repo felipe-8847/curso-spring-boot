@@ -8,4 +8,5 @@ import com.educando.curso.model.Category;
 @Repository
 public interface CategoryRepository extends JpaRepository<Category, Long> {
 
+	public Category findAllByName (String name);
 }
